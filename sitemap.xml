@@ -13,10 +13,6 @@
 <lastmod>2019-12-01T00:00:00+06:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/french-wine/</loc>
-<lastmod>2020-01-01T00:00:00+06:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/review-oscar/</loc>
 <lastmod>2020-01-01T00:00:00+06:00</lastmod>
 </url>
@@ -49,6 +45,10 @@
 <lastmod>2020-02-02T00:00:00+06:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/domain/</loc>
+<lastmod>2020-08-30T00:00:00+06:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about</loc>
 </url>
 <url>
@@ -68,6 +68,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/travel/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/knowledge/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>

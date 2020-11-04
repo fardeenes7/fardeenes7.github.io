@@ -2,12 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fardeen's Blog</title>
-    <description>I am Fardeen Ehsan. I love to write thus I write on this blog.</description>
+    <description>I am Fardeen Ehsan. I love to write. I started this blog to continue showing love to technology.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Oct 2020 21:28:18 +0600</pubDate>
-    <lastBuildDate>Tue, 27 Oct 2020 21:28:18 +0600</lastBuildDate>
+    <pubDate>Wed, 04 Nov 2020 23:13:53 +0600</pubDate>
+    <lastBuildDate>Wed, 04 Nov 2020 23:13:53 +0600</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
+    
+      <item>
+        <title>ডোমেইন ও হোস্টিং</title>
+        <description>&lt;p&gt;কিছুক্ষণ আগে ডিএসবি তে এক ভাইয়ার পোস্ট পড়লাম হোস্টিং নিয়ে। উনার ব্যাখ্যাটা আমার কাছে একটু জটিল মনে হল। তাই আমি চেষ্টা করলাম আরেকটু সহজ করে বুঝাতে।&lt;/p&gt;
+
+&lt;p&gt;একটা ওয়েবসাইট আসলে একটা বাড়ির মত। একটা বাড়ি করার প্রসেস গুলো কি কি? একটা জমি থাকবে, জমির উপর বাড়ি হবে। তারপর বাড়িটার জন্য একটা ঠিকানা হবে। তাই তো? ওয়েবসাইট বানাতে গেলেও একই রকম প্রসেস ফলো করতে হয়।&lt;/p&gt;
+
+&lt;p&gt;জমি: বাড়ি করতে প্রথমেই আমাকে জমির ব্যাবস্থা করতে হয়। ওয়েবসাইট এর ক্ষেত্রে এই জমিটাই হল হোস্টিং। প্রথমত ওয়েবসাইট বানাতে গেলেই যে হোস্টিং কিনতে হবে, সেটা না। চাইলে নিজের কম্পিউটারে টেম্পোরারি সার্ভার চালু করে সেটাকে হোস্টিং হিসেবে ব্যাবহার করা যায়। এটাকে বলে লোকালহোস্ট। তবে ওয়েবসাইট পাবলিক এর জন্য রিলিজ করার সময় একটা হোস্টিং ভাড়া নেয়াই উত্তম। হোস্টিং কয়েক ধরনের হয়, প্রত্যেকটার ব্যাখ্যা অনেক বড় হবে। হয়তো অন্য কোনদিন সেগুলোর ব্যাখ্যা দিব।&lt;/p&gt;
+
+&lt;p&gt;বাড়ি: জমি কেনা শেষ। এখন বাড়ি বানানোর কাজ। ওয়েবসাইট দুই ধরণের হয়, স্ট্যাটিক আর ডায়নামিক। স্ট্যাটিক ওয়েবসাইট শুধু html/css ও ক্ষেত্রবিশেষে JavaScript ব্যাবহার করা হয়। ডায়নামিক ওয়েবসাইটে বিভিন্ন ধরণের ল্যাঙ্গুয়েজ ব্যবহার করা যেতে পারে। কিন্তু যেই জিনিসটা স্ট্যাটিক থেকে ডায়নামিক ওয়েবসাইটকে আলাদা করে সেটা হচ্ছে ডাটাবেজ। একটা ডায়নামিক ওয়েবসাইটের ডাটাবেজ লাগবেই। ডাটাবেজ অনেক ধরণের হয়, সেই ব্যাখ্যায় আজ যাচ্ছিনা।&lt;/p&gt;
+
+&lt;p&gt;লোকালহোস্ট এ ওয়েবসাইটের কাজ শেষ হওয়ার পর ওয়েবসাইট হোস্টিংয়ে আপলোড করতে হয়। গুগল ড্রাইভ বা ফেসবুকে আমরা যেমন ছবি আপলোড করি খুব সহজেই, ওয়েবসাইট আপলোড এর ব্যাপারটা তেমন সহজ/সিম্পল কিছুনা। স্ট্যাটিক ওয়েবসাইটআপলোড করা মোটামুটি সহজ। কিন্তু ডায়নামিক ওয়েবসাইট মানে যেটার কন্টেন্ট চেন্জ হয় সময়ে সময়ে, যেমন ফেসবুক, বা একটা ইকমার্স এর ওয়েবসাইট বা একটা ব্লগ ওয়েবসাইট, এগুলো আপলোড করা জটিল প্রসেস। জটিল হওয়ায় এই ব্যাখ্যায় আর যাচ্ছিনা। হয়ত অন্য কোনোদিন। এখন আসি ডোমেইনে।&lt;/p&gt;
+
+&lt;p&gt;এড্রেস/ঠিকানা: জমি কিনে সেটার উপর বাড়ি বানানো শেষ। মানুষ আমার বাড়ি চিনবে কিভাবে? কাউকে কিভাবে বুঝাবো আমার বাড়িটা কোথায়? সেটার জন্য লাগবে ঠিকানা। অনেকের ধারণা হতে পারে এটাই হচ্ছে ডোমেইন। টেকনিক্যাল কথা চিন্তা করলে এটা ডোমেইন না। ডোমেইন আসলে অনেকটা নেমপ্লেটের মত, যেখানে লেখা থাকে আপনার বাড়ির নাম , সাথে ঠিকানা। তাহলে ঠিকানা কোনটা? ঠিক হচ্ছে আসলে আইপি এড্রেস। এটা হোস্টিংয়ের সাথেই পাওয়া যাবে, এটা নিয়ে টেনশনের কিছু নেই।&lt;/p&gt;
+
+&lt;p&gt;আমাদের অনেকের মনে একটা ভুল ধারনা আছে, ডোমেইন অনেক ইম্পরট্যান্ট। কেউ কেউ তো আবার হোস্টিং থেকে ডোমাইনকে বেশী প্রাধান্য দিয়ে থাকে। এটা একদমই ভুল ধারণা। হোস্টিং থেকে ডোমেইন মোটেও বেশি দরকারী না। ডোমেইন দিয়ে মানুষকে বলবেন যে এটা আমার ওয়েবসাইট। কিন্তু হোস্টিং এর উপর ডিপেন্ড করবে ওয়েবসাইটটা কেমন পারফর্ম করছে। মাঝেমাঝে আমরা দেখিনা সার্ভার ওভারলোড হয়ে ওয়েবসাইট কাজ করছে না? মাঝেমাঝেই পিএসসি/জেএসসি/এসএসসির রেজাল্টের সময় দেখা যায় সার্ভার ডাউন। এটা হয় হোস্টিং এর জন্য। হোস্টিং যখন এত মানুষের লোড নিতে পারেনা, তখন সেটা ক্র্যাশ করে/সার্ভার ডাউন হয়ে যায়। ডোমেইন এর উপর ওয়েবসাইট এর কিছুই নির্ভর করেনা।&lt;/p&gt;
+
+&lt;p&gt;আচ্ছা ডোমেইন কি কিনতেই হবে? নাহ, কিনতেই হবে এমন কোন কথা নেই। ডোমেইন লাগবেই ওয়েবসাইট চালাতে এমন কোন নিয়ম নেই। তাহলে ওয়েবসাইট খুঁজে পাবে কিভাবে? আইপি এড্রেস দিয়ে। আইপি এড্রেস চিনেন তো? 000.000.000.000, এমন ফরম্যাটের হয় আইপি এড্রেস। ডোমেইন না কিনে আইপি এড্রেস দিয়েও ওয়েবসাইট চালানো সম্ভব।&lt;/p&gt;
+
+&lt;p&gt;এসইও: ওয়েবসাইট বানালাম, হোস্টিং ডোমেইন কিনলাম। কিন্তু গুগলে সার্চ দিলে আমার ওয়েবসাইট আসছেনা। কেন? এটার উত্তর এসইও/SEO। SEO মানে Search Engine Optimization। ওয়েবসাইট বানানোর পর সার্চ ইঞ্জিনকে বলে দিতে হয় আমার ওয়েবসাইট এইখানে আছে। এইটা, এইটা সার্চ দিলে আমার ওয়েবসাইট দেখানো হোক কারণ আমার ওয়েবসাইট এইসব এর সাথে সম্পর্কিত। যেমন potato সার্চ দিলে আমার ওয়েবসাইট দেখানো হোক কারণ আমার ওয়েবসাইটে আলু বিক্রি হয়। তবে কিছু CMS যেমন ওয়ার্ডপ্রেসে seo জিনিসটার জন্য আলাদা প্লাগিন থাকে, সেটা নিজে নিজেই এসইও এর কিছু কাজ করে। cms আজকের টপিক না, তাই সেটা নিয়ে কথা বাড়াচ্ছি না।&lt;/p&gt;
+
+&lt;p&gt;কিছু কমন প্রশ্ন ও তাদের উত্তর (F.A.Q.)&lt;/p&gt;
+
+&lt;p&gt;প্রশ্ন: হোস্টিং কত টাকার কিনলে ভালো হয়?
+ উত্তর: যতটুকু স্পিড/ক্যাপাসিটি/স্টোরেজ আপনার দরকার। বড়(বেশি  মানুষ ভিজিট করে) একটা ওয়েবসাইটের জন্য 1 লক্ষ টাকার হোস্টিং ও কম হবে। আবার একেবারে কম মানুষ ভিজিট করে এমন ওয়েবসাইটের জন্য 5 হাজার টাকার ওয়েবসাইটও বেশী হয়ে যাবে। তবে প্রথম প্রথম শুরু করার জন্য 2 হাজার মধ্যে শেয়ার্ড হোস্টিং কিনেই শুরু করা যায়।&lt;/p&gt;
+
+&lt;p&gt;প্ৰশ্ন:  ডোমেইন/ হোস্টিং দেশী ওয়েবসাইট থেকে কিনব নাকি বিদেশী?
+উত্তর: আমার এক্সপেরিয়েন্স থেকে দেখা দেশী রিসেলাররা অতিরিক্ত প্রাইস রাখে। আপনার বাজেট যদি একেবারে কম হয়, তাহলে দেশী নিতে পারেন কার্য তারা কম টাকার প্যাকেজ রাখে, যদিও স্টোরেজ/ram কম হয় একদম। কিন্তু বিদেশী হোস্টিং অবশ্যই সাজেস্টেড। আপনি বিদেশী কোন কোম্পানী থেকে হোস্টিং নিলে 2000 টাকার যদি 20 GB স্টোরেজ পান, দেশী কোম্পানি থেকে 1000 টাকায় 2 থেকে 5 জিবি পাবেন।&lt;/p&gt;
+
+&lt;p&gt;প্রশ্ন: ভালো হোস্টিং কোম্পানি কোনগুলো?
+উত্তর: আমি namecheap, bluehost, hostgator, godaddy ইত্যাদি প্রেফার করি&lt;/p&gt;
+
+&lt;p&gt;প্রশ্ন: ভালো ডোমেইন কত টাকায় পাওয়া যায়?
+উত্তর: ভালো ডোমেইন বলতে কিছু নেই। ডোমেইন সবগুলোর কাজ ও ফিচার্স একই। আপনার কোনটা পছন্দ সেটা নিবেন। এখন .com ইন্ডাস্ট্রি স্ট্যান্ডার্ড। বেশিরভাগই .com প্রেফার করে। আবার .com.bd ও পপুলার। .com কোম্পানি ভেদে 700 থেকে 900 টাকায় পেয়ে যাবেন। আবার .xyz ডোমেইন 150 থেকে 250 টাকায় পাওয়া যায়। ডোমেইনের পিছনে 1000 এর বেশী খরচ না করার পরামর্শ থাকবে&lt;/p&gt;
+
+&lt;p&gt;আজকের জন্য এখানেই শেষ করছি। আপনাদের যেকোন প্রশ্ন থাকলে করতে পারেন। এই গ্রুপে আমার প্রথম পোস্ট। যেকোন অনাকাঙ্ক্ষিত ভুলের জন্য ক্ষমাপ্রার্থী।&lt;/p&gt;
+
+&lt;p&gt;আমি ফারদিন এহসান, পড়াশোনা করছি কম্পিউটার সায়েন্স ও ইঞ্জিনিয়ারিং নিয়ে। ধন্যবাদ।&lt;/p&gt;
+
+&lt;p&gt;[এডিটেড এন্ড রিপোস্টেড]&lt;/p&gt;
+</description>
+        <pubDate>Sun, 30 Aug 2020 00:00:00 +0600</pubDate>
+        <link>http://localhost:4000/domain/</link>
+        <guid isPermaLink="true">http://localhost:4000/domain/</guid>
+        
+        <category>Domain</category>
+        
+        
+        <category>Knowledge</category>
+        
+      </item>
     
       <item>
         <title>Les Ambassadeurs, the first Restaurant we Visited in Paris</title>
@@ -221,33 +272,6 @@ rating: 4.5
         <guid isPermaLink="true">http://localhost:4000/review-oscar/</guid>
         
         <category>Movies</category>
-        
-        
-        <category>Lifestyle</category>
-        
-      </item>
-    
-      <item>
-        <title>French Wine has to compete with many new world wines</title>
-        <description>&lt;p&gt;French wine is produced all throughout France, in quantities between 50 and 60 million hectolitres per year, or 7–8 billion bottles. France is one of the largest wine producers in the world, along with Italian, Spanish, and American wine-producing regions.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;French wine traces its history to the 6th century BC, with many of France’s regions dating their wine-making history to Roman times. The wines produced range from expensive wines sold internationally to modest wines usually only seen within France such as the Margnat wines were during the post war period.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Two concepts central to the better French wines are the notion of terroir, which links the style of the wines to the locations where the grapes are grown and the wine is made and the Appellation d’origine contrôlée (AOC) system, replaced by the Appellation d’Origin Protégée (AOP) system in 2012.&lt;/p&gt;
-
-&lt;p&gt;Appellation rules closely define which grape varieties and winemaking practices are approved for classification in each of France’s several hundred geographically defined appellations, which can cover regions, villages or vineyards.&lt;/p&gt;
-
-&lt;p&gt;France is the source of many grape varieties (such as &lt;strong&gt;Cabernet Sauvignon, Chardonnay, Pinot noir, Sauvignon blanc, Syrah&lt;/strong&gt;) that are now planted throughout the world, as well as wine-making practices and styles of wine that have been adopted in other producing countries.&lt;/p&gt;
-
-&lt;p&gt;Although some producers have benefited in recent years from rising prices and increased demand for some of the prestige wines from Burgundy and Bordeaux, the French wine industry has seen a decline in domestic consumption and internationally, it has had to compete with many new world wines.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 01 Jan 2020 00:00:00 +0600</pubDate>
-        <link>http://localhost:4000/french-wine/</link>
-        <guid isPermaLink="true">http://localhost:4000/french-wine/</guid>
-        
-        <category>France</category>
         
         
         <category>Lifestyle</category>

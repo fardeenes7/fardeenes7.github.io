@@ -5,6 +5,14 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
+ @font-face {
+	font-family: 'RRR';
+	src: url('../fonts/rrr.eot');
+	src: local('☺'), 
+		 url('../fonts/rrr.woff') format('woff'), 
+		 url('../fonts/rrr.ttf') format('truetype'), 
+		 url('../fonts/rrr.svg') format('svg');
+  }
 
 code[class*="language-"],
 pre[class*="language-"] {
