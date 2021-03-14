@@ -1,0 +1,16 @@
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura.ttf);
+  }
+div {
+    padding-top: 10%;
+    
+}
+h5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+a {
+    padding-top: 20px;
+}
