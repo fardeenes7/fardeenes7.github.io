@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Navbar() {
     return (
-        <nav className='fixed top-0 z-20 w-full lg:px-16 py-6 flex justify-between'>
+        <nav className='fixed top-0 z-[50] w-full lg:px-16 py-6 flex justify-between'>
                     <div className='w-1/5 items-center justify-center'>
                         <a href='/blog' className='text-lg font-bold'>
                             Blog
