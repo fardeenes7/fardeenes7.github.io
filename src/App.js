@@ -1,17 +1,28 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import Maintenance from './maintenance/Maintenance';
 import Home from './pages/Home';
+import Blog from './pages/Blog';
+import SingleBlog from './pages/SingleBlog';
 
 function App() {
-  if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+  const isMaintenance = false;
+  if (isMaintenance) {
     // dev code
     return (
-      <Home/>
+      <Maintenance/>
+      
     );
 } else {
     // production code
     return (
-        <Maintenance/>
+      <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/blog/' element={<Blog/>} />
+        <Route path='/blog/:slug' element={<SingleBlog/>} />
+      </Routes>
+    </Router>
     );
 }
   

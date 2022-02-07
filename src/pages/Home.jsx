@@ -1,63 +1,45 @@
 import React from 'react';
 import me from  '../images/me.jpg'
+import Navbar from '../components/Navbar';
 
 export default function Home() {
     return (
-        <div className='snap-y snap-mandatory snap-always h-screen w-screen overflow-y-scroll text-white'>
-            
-            <div className='h-screen w-full snap-start bg-gray-900'>
-                <nav className='w-full lg:px-16 py-6 flex justify-between'>
-                    <div className='w-1/5 items-center justify-center'>
-                        <a href='#' className='text-lg font-bold'>
-                            Home
-                        </a>
-                    </div>
+        <div className='scroll-smooth snap-y snap-mandatory snap-always h-screen w-screen overflow-y-scroll text-white'>
+            <div id='home' className='relative h-screen w-full snap-start bg-gray-900 overflow-hidden'>
+                <Navbar />
 
-                    <div className='items-center justify-center'>
-                        <h1 className='text-4xl font-bold'>fardeen.</h1>
-                    </div>
-
-                    <div className='w-1/5'>
-                        <ul className='flex items-center'>
-                            <li className='mx-4'>
-                                <a href='#' className='text-lg font-bold'>
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li className='mx-4'>
-                                <a href='#' className='text-lg font-bold'>
-                                    About
-                                </a>
-                            </li>
-                            <li className='mx-4'>
-                                <a href='#' className='text-lg font-bold'>
-                                    Resume
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                <p className='w-full absolute bottom-0 z-0 opacity-5 text-sign md:text-sign-md lg:text-sign-lg xl:text-sign-xl text-center font-conforter overflow-hidden'>
+                    fardeen
+                </p>
 
                 <div className='w-full h-full flex justify-center items-center'>
                     <div>
-                    <h2 className='text-6xl text-rose-400 font-bold'>Hello, <span className='text-gray-400'>i am</span></h2>
-                    <p className='text-[12em]'>Fardeen Ehsan</p>
+                    <h2 className='animate-[bounce_2s] text-2xl md:3xl lg:4xl xl:text-6xl text-orange-600 font-bold'>Hello, <span className='text-gray-400'>i am</span></h2>
+                    <p className='text-5xl md:text-8xl xl:text-[12em]'>Fardeen Ehsan</p>
                     </div>
-                    
                 </div>
 
             </div>
 
-            <div className='h-screen w-full snap-start bg-slate-700 flex items-center justify-center'>
-                <h2>Two</h2>
+            <div id='portfolio' className='relative h-screen w-full snap-start bg-slate-700 flex items-center justify-center overflow-hidden'>
+                <p className=' absolute bottom-0 z-0 opacity-5  text-sign md:text-sign-md xl:text-sign-xl text-center  font-conforter'>
+                    portfolio
+                </p>
+                <h2>Portfolio</h2>
             </div>
 
-            <div className='h-screen w-full snap-start bg-gray-800 flex items-center justify-center'>
-                <h2>Three</h2>
+            <div id='resume' className='relative h-screen w-full snap-start bg-gray-800 flex items-center justify-center overflow-hidden'>
+            <p className=' absolute bottom-0 z-0 opacity-5  text-sign md:text-sign-md lg:text-sign-lg xl:text-sign-xl text-center  font-conforter'>
+                    resume
+                </p>
+                <h2>Resume</h2>
             </div>
 
-            <div className='h-screen w-full snap-start bg-slate-900 flex items-center justify-center'>
-                <h2>Four</h2>
+            <div id='contact' className='relative h-screen w-full snap-start bg-slate-900 flex items-center justify-center overflow-hidden'>
+                <p className=' absolute bottom-0 z-0 opacity-5  text-sign md:text-sign-md lg:text-sign-lg xl:text-sign-xl text-center  font-conforter'>
+                    contact
+                </p>
+                <h2>Contact</h2>
             </div>
         </div>
     );

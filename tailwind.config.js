@@ -5,6 +5,12 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    extend: {
+      fontFamily: {
+        conforter: "'Comforter', serif",
+        jetbrains: "'JetBrains Mono', monospace",
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -387,6 +393,11 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
+      'sign': ['10em', { lineHeight: '1' }],
+      'sign-md': ['20em', { lineHeight: '1' }],
+      'sign-lg': ['30em', { lineHeight: '1' }],
+      'sign-xl': ['40em', { lineHeight: '1' }],
+      
     },
     fontWeight: {
       thin: '100',
