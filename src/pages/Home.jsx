@@ -1,12 +1,19 @@
 import React, {useState, useRef, useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import loader from '../assets/loader.svg';
-import Contact from '../components/Contact';
-import {FaFacebook, FaLinkedin, FaGithub} from 'react-icons/fa';
-import {SiGmail} from 'react-icons/si';
+import PortfolioSlider from '../components/PortfolioSlider';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import HomeNav from '../components/HomeNav';
+import me from '../assets/me.jpg';
+const project = {
+        id: 1,
+        title: 'Nasheedcity',
+        tagline: 'This is a tagline',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.',
+        image: 'https://source.unsplash.com/random/1280x720',
 
+    }
 
 export default function Home(){
     useEffect(() => {
@@ -20,58 +27,95 @@ export default function Home(){
                 <img src={loader} alt="loader" className='h-20 lg:h-24' />
                 <h1 className='text-6xl font-bold text-white'>welcome.</h1>
             </div>
+            
   
-        <div className='font-convergence relative scroll-smooth snap-y snap-mandatory snap-always h-screen overflow-y-scroll overflow-x-hidden text-white'>
-            <div id='home' className='z-10 relative h-screen w-full snap-start bg-gray-900 overflow-hidden'>
+        <div className='font-convergence relative scroll-smooth snap-y snap-mandatory snap-always h-screen w-screen overflow-y-scroll overflow-x-hidden text-white'>
+            <div className='fixed z-40 right-0 top-[40%]'>
+                <div className='h-full w-full flex items-center justify-end pr-16 text-gray-300 font-jetbrains'>
+                    <ul className=''>
+                        <li className='hover:text-orange-500 hover:underline underline-offset-2 transform duration-300'><a href='/#home'>Home</a></li>
+                        <li className='mt-4 hover:text-orange-500 hover:underline underline-offset-2 transform duration-300'><a href='/#about'>About Me</a></li>
+                        <li className='mt-4 hover:text-orange-500 hover:underline underline-offset-2 transform duration-300'><a href='/#featured'>Featured</a></li>
+                        <li className='mt-4 hover:text-orange-500 hover:underline underline-offset-2 transform duration-300'><a href='/#blog'>Blog Posts</a></li>   
+                    </ul>
+                </div>
+            </div>
+            <div id='home' className='z-10 relative h-screen w-screen snap-start bg-gray-900 overflow-hidden'>
                 <Navbar />
-
+                
                 <p className='w-full absolute rotate-[-90deg] md:rotate-0 top-[50%] left-20 md:left-0 md:bottom-0 z-0 opacity-5 text-sign-md lg:text-sign-lg xl:text-sign-xl text-center font-conforter'>
                     fardeen
                 </p>
 
                 <div className='w-full h-full flex justify-center items-center'>
                     <div className=''>
-                    <h2 id='helloText' className='text-2xl md:3xl lg:4xl xl:text-6xl text-orange-600 font-bold overflow-hidden'>Hello, <span className='text-gray-400'>i am</span></h2>
-                    <p id='nameText' className='text-5xl md:text-8xl lg:text-[8em] xl:text-[12em]'>Fardeen Ehsan</p>
+                    <h2 data-aos="zoom-in" id='helloText' className='text-2xl md:3xl lg:4xl xl:text-6xl text-orange-600 font-bold overflow-hidden'>Hello, <span className='text-gray-400'>i am</span></h2>
+                    <p data-aos='fade-up' data-aos-duration="3000" id='nameText' className='font-josefin mt-10 text-5xl md:text-8xl lg:text-[8em] xl:text-[12em]'>Fardeen <span id='ehsan' className='text-outline text-transparent'>Ehsan</span></p>
                     </div>
                 </div>
 
             </div>
-            <div id='portfolio' className='z-0 relative h-screen w-100 snap-start bg-slate-700 flex items-center justify-center'>
-                <p className='md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/3 left-[30%] md:left-0 bottom-0 z-0 opacity-5 text-sign-md xl:text-sign-xl text-center  font-conforter'>
-                    portfolio
-                </p>
-                <h2>Portfolio</h2>
-                
-            </div>
-            <div id='resume' className='z-0 relative flex m-auto h-screen w-full snap-start bg-gray-800 items-center justify-center'>
+
+            <div id='about' className='z-0 relative flex m-auto h-screen w-full snap-start bg-gray-800 items-center justify-center'>
                 <p className='md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/2 left-[70%] md:left-0 bottom-0 z-0 opacity-5 text-sign-md xl:text-sign-xl text-center  font-conforter'>
-                    resume
+                    about
                 </p>
-                <h2>Resume</h2>
+                <div className='w-screen h-screen p-40 pt-52 grid grid-cols-2'>
+                    <div className='flex flex-col justify-between'>
+                        <h1 data-aos="fade-right" className='text-6xl font-jetbrains'>About<br/>Myself</h1>
+                        <img data-aos="zoom-in" src={me} alt="myself" className='w-[21rem] rounded-xl shadow-lg shadow-gray-900' />
+                    </div>
+                    <div data-aos="fade-left" className='p-16 pt-0 text-justify'>
+                        <p className='mb-8'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p className='mb-8'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p className='mb-8'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            
+                    </div>
+
+                </div>
             </div>
 
-            <div id='contact' className='px-10 lg:px-40 z-0 relative h-screen w-full snap-start bg-[#060406] grid grid-cols-1 lg:grid-cols-2 items-center overflow-hidden'>
-                <div data-aos='fade-down' className='absolute my-[10%] top-0 h-[0.1em] w-screen bg-gray-400'></div>
-                <div data-aos='fade-up' className='absolute my-[10%] bottom-0 h-[0.1em] w-screen bg-gray-400'></div>
-                   
-                <p className='-z-10 md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/2 left-[50%] md:left-0 bottom-0 opacity-10 text-sign-md xl:text-sign-xl text-center  font-conforter'>
-                    contact
+
+            <div id='featured' className='z-0 relative h-screen w-100 snap-start bg-slate-700 flex items-center justify-center'>
+                <p className='-z-10 md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/3 left-[30%] md:left-0 bottom-0 opacity-5 text-sign-md xl:text-sign-xl text-center  font-conforter'>
+                    featured
                 </p>
-                <div data-aos='fade-up-right' className='w-ful z-10'>
-                    <h2 className='text-3xl lg:text-7xl font-bold text-center'>Contact Me</h2>
-                    <div className='flex justify-center mt-4 pt-4 text-center'>
-                        <a target="_blank" href="https://www.facebook.com/fardeen.es7"><FaFacebook className='text-2xl mx-2'/></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/fardeenes7/"><FaLinkedin className='text-2xl mx-2'/></a>
-                        <a target="_blank" href="https://github.com/fardeenes7"><FaGithub className='text-2xl mx-2'/></a>        
-                        <a href="mailto:fardeen.es7@gmail.com"><SiGmail className='text-2xl mx-2'/></a>
-                    </div>
-                </div>
-                <div className='h-screen p-10 pt-[10%] flex items-center justify-center'>
-                    <div data-aos='fade-right' className='absolute mx-[55%] left-0 w-[0.1em] h-full bg-gray-400'></div>
-                    <div data-aos='fade-left' className='absolute mx-[15%] right-0 w-[0.1em] h-full bg-gray-400'></div>
                 
-                    <Contact/>
+                {/* Featured Project */}
+            
+                <div className='h-screen w-screen p-40 pt-52'>
+                    <div className='col-span-2 relative'>
+                        <div className='absolute'>
+                            <h1 data-aos="fade-right" className='text-6xl font-jetbrains'>Featured<br/>project</h1>
+                        </div>
+                        <div className='flex justify-end'>
+                            <img data-aos="zoom-in" src={project.image}
+                            className='w-4/6 rounded-xl shadow-lg' alt="" />
+                        </div>
+                        <div data-aos="fade-up" className='absolute mt-[-12%] '>
+                            <h1 className='text-9xl font-josefin text-transparent text-outline'>{project.title}</h1>
+                            <p className=' mb-4'>{project.tagline}</p>
+                            <a href='/portfolio' className='p-2 px-4 rounded-lg shadow-lg cursor-pointer bg-gray-400 text-black hover:bg-slate-500'>View More</a>
+                        </div>
+                    </div>
+                </div>                    
+                {/* Featured Project */}
+                    
+                
+            </div>
+            
+
+            <div id='blog' className='h-screen z-0 relative flex w-full snap-start bg-gray-700 items-center justify-center overflow-hidden'>
+                <p className='md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/2 left-[70%] md:left-0 bottom-0 z-0 opacity-5 text-sign-md xl:text-sign-xl text-center  font-conforter'>
+                    blog
+                </p>
+                <div className='w-screen h-screen p-40 pt-52 grid grid-cols-4'>
+                    <div className=''>
+                        <h1 data-aos="fade-right" className='text-6xl font-jetbrains'>Blog<br/>Posts</h1>
+                        <img src="" alt="" />
+                    </div>
+                    
+
                 </div>
             </div>
         </div>

@@ -11,6 +11,7 @@ module.exports = {
         jetbrains: "'JetBrains Mono', monospace",
         convergence: "'Convergence', sans-serif",
         rowdies: "'Rowdies', cursive",
+        josefin: "'Josefin Sans', sans-serif",
       },
     },
     screens: {
