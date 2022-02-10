@@ -1,0 +1,3 @@
+#name:focus ~ #nameLabel{
+    @apply bg-inherit transform -translate-y-9 -translate-x-4;
+}

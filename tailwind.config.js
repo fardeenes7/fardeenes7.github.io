@@ -9,6 +9,8 @@ module.exports = {
       fontFamily: {
         conforter: "'Comforter', serif",
         jetbrains: "'JetBrains Mono', monospace",
+        convergence: "'Convergence', sans-serif",
+        rowdies: "'Rowdies', cursive",
       },
     },
     screens: {
