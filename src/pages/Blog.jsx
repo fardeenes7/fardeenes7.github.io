@@ -1,30 +1,8 @@
 import React, {useEffect, useRef} from 'react';
-import $ from 'jquery';
-import {gsap, Power3} from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 export default function Blog() {
     const portfolioWidth = useRef(null);
-    gsap.registerPlugin(ScrollTrigger);
-    useEffect(() => {
-        let sections = gsap.utils.toArray('.panel');
-        gsap.to(sections, {
-            xPercent: -100*(sections.length-1),
-            ease:"none",
-            scrollTrigger:{
-                trigger: "#portfolio",
-                start: 'top top',
-                pin:true,
-                scrub:0.5,
-                snap:1/(sections.length-1),
-                end:()=>"+=" + portfolioWidth,
-                markers:true,
-            }
-            });
-
-        
-    }, [])
       
     return <div className=''>
                 <div className='z-10 h-screen bg-gray-800 w-screen flex items-center justify-center shrink-0'><p>This is Project Main</p></div>
