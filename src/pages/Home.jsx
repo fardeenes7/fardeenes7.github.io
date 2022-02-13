@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Navbar from '../components/Navbar';
 import loader from '../assets/loader.svg';
 import Aos from 'aos';
