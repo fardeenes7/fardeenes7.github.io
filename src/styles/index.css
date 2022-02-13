@@ -6,3 +6,10 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(167, 167, 167);
 }
+
+@font-face {
+  font-family: 'Google Sans Display';
+  src: url('fonts/GoogleSansDisplay.ttf') format('ttf'),
+    url('fonts/GoogleSansDisplayRegular.woff') format('woff'),
+    url('fonts/GoogleSansDisplayRegular.woff2') format('woff2');
+}

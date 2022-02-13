@@ -26,7 +26,7 @@ export default function Navbar() {
                     </div>
 
                     <div className='w-1/5 text-center items-center justify-center'>
-                        <a href='/#home' className='text-4xl font-convergence font-bold'>fardeen.</a>
+                        <a href='/#home' className='text-4xl font-google font-bold'>fardeen.</a>
                     </div>
 
                     <div className='w-1/5 z-999'>

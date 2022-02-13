@@ -12,6 +12,7 @@ module.exports = {
         convergence: "'Convergence', sans-serif",
         rowdies: "'Rowdies', cursive",
         josefin: "'Josefin Sans', sans-serif",
+        google: "'Google Sans Display', sans-serif",
       },
     },
     screens: {
