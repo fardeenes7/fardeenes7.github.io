@@ -50,7 +50,7 @@ export default function Home(){
             </div>
 
             <div id='about' className='z-0 relative m-auto h-screen w-full snap-start bg-black items-center justify-center'>
-                <p className='md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/2 left-[70%] md:left-0 bottom-0 z-0 opacity-5 text-sign-md xl:text-sign-xl text-center  font-conforter'>
+                <p className='md:w-full absolute rotate-[-90deg] md:rotate-0 top-[10%] md:top-1/2 left-[70%] md:left-0 bottom-0 z-0 opacity-20 text-sign-md xl:text-sign-xl text-center  font-conforter'>
                     about
                 </p>
                 <img data-aos="zoom-in" src={me} alt="myself" className='z-0 absolute bottom-0 right-3 w-[100%] max-w-4xl rounded-xl' />
